@@ -1,11 +1,32 @@
-import { Drawer } from 'expo-router/drawer'
-import {Feather} from "@expo/vector-icons"
+import { Stack } from "expo-router";
 
-export default function TabLayout() {
-    return(
-        <Drawer>
-            <Drawer.Screen name='cadastro' options={{drawerIcon:()=> <Feather name='user-plus'/>, title:"Cadastro"}}/>
-            <Drawer.Screen name='perfil' options={{drawerIcon:()=> <Feather name='user'/>, title:"Perfil"}}/>
-        </Drawer>
-    );
+export default function Layout() {
+  return (
+    <Stack
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "#7e6ef1",
+        },
+        headerTintColor: "#fff",
+        headerTitleStyle: {
+          fontWeight: "bold",
+        },
+      }}
+    >
+      <Stack.Screen
+        name="cadastro"
+        options={{
+          title: "Cadastro",
+          headerShown: true,
+        }}
+      />
+      <Stack.Screen
+        name="perfil"
+        options={{
+          title: "Perfil",
+          headerShown: true,
+        }}
+      />
+    </Stack>
+  );
 }
