@@ -56,7 +56,7 @@ Aplicada nos campos:
 ## Tecnologias Utilizadas
 - React Native
 - Expo
-- React Navigation ou Expo Router
+- Expo Router
 - Async Storage
 - react-native-mask-text
 
