@@ -9,7 +9,7 @@ Este projeto consiste no desenvolvimento de um aplicativo mobile utilizando Reac
 - Implementação de rotas entre:
   - Tela de Cadastro
   - Tela de Perfil
-- Utilização de React Navigation ou Expo Router
+- Utilização de Expo Router
 
 ### Tela de Cadastro
 - Formulário contendo:
